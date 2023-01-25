@@ -9,3 +9,11 @@ output "private_subnets" {
 output "vpc_id" {
   value = aws_vpc.main.id
 }
+
+output "sg_https_oem" {
+  value = aws_security_group.https_from_eht.id 
+}
+
+output "sg_http_oem" {
+  value = aws_security_group.http_from_eht.id
+}
